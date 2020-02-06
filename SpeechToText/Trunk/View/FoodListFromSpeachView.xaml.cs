@@ -14,6 +14,11 @@ namespace SpeechToText.Implementation.View
             BindingContext = _ViewController.InputObject;
         }
 
+        public void AddFood(object sender, EventArgs e)
+        {
+            _ViewController.AddFood();
+        }
+
         //#Bonsai Snippets - ViewControllerMethodCalls
     }
 }

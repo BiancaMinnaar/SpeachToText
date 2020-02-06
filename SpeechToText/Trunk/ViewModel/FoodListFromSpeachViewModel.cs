@@ -18,6 +18,17 @@ namespace SpeechToText.Trunk.ViewModel
                 PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("FoodList"));
             }
         }
- //#Bonsai Snippets - Properties
+
+        private string foodItemToAdd;
+        public string FoodItemToAdd
+        {
+            get { return foodItemToAdd; }
+            set
+            {
+                foodItemToAdd = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("FoodItemToAdd"));
+            }
+        }
+        //#Bonsai Snippets - Properties
     }
 }

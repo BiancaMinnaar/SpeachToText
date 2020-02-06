@@ -4,6 +4,6 @@
     xmlns:control="clr-namespace:SpeechToText.Trunk.View.Control"
        xmlns:view="clr-namespace:SpeechToText.Implementation.View"
        x:Class="SpeechToText.Trunk.View.AppShell">
-    <ShellContent Title="System"
-                  ContentTemplate="{DataTemplate view:SystemView}" />
+    <ShellContent Title="SpeachToText"
+                  ContentTemplate="{DataTemplate view:FoodListFromSpeachView}" />
 </Shell>

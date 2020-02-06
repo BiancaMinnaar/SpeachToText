@@ -22,6 +22,10 @@
       <SubType>Designer</SubType>
       <Generator>Generator</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Trunk\View\Control\FoodListControlView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>Generator</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)Root\CheckAndBalance.cs" />
@@ -61,6 +65,14 @@
       <DependentUpon>FoodListFromSpeachView.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Trunk\ViewModel\FoodViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\View\Control\FoodListControlView.xaml.cs">
+      <DependentUpon>FoodListControlView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\ViewModel\Control\FoodListControlViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\Repository\IFoodListFromSpeachRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\Repository\Implementation\FoodListFromSpeachRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\Service\IFoodListFromSpeachService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\Service\Implementation\FoodListFromSpeachService.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Root\" />
