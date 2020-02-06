@@ -31,11 +31,11 @@ namespace SpeechToText.iOS.Injection
         {
             AudioEngine.Stop();
             LiveSpeechRequest.EndAudio();
-            LiveSpeechRequest?.EndAudio();
         }
 
         public void TranslateSpeachToText(FoodListFromSpeachViewModel model)
         {
+
             // Setup audio session
             var node = AudioEngine.InputNode;
             var recordingFormat = node.GetBusOutputFormat(0);
