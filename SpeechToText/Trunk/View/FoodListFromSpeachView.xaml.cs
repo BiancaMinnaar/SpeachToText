@@ -19,6 +19,11 @@ namespace SpeechToText.Implementation.View
             _ViewController.AddFood();
         }
 
+        public void RecordAudio(object sender, EventArgs e)
+        {
+            _ViewController.SetAudioRecording();
+        }
+
         //#Bonsai Snippets - ViewControllerMethodCalls
     }
 }

@@ -30,6 +30,17 @@ namespace SpeechToText.Trunk.ViewModel
             }
         }
 
+        private bool isRecording;
+        public bool IsRecording
+        {
+            get { return isRecording; }
+            set
+            {
+                isRecording = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("IsRecording"));
+            }
+        }
+
         public FoodListFromSpeachViewModel()
         {
             FoodList = new ObservableCollection<FoodViewModel>();

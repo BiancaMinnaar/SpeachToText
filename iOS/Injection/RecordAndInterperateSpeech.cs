@@ -4,6 +4,7 @@ using Foundation;
 using Speech;
 using SpeechToText.iOS.Injection;
 using SpeechToText.Trunk.Service;
+using SpeechToText.Trunk.ViewModel;
 
 [assembly: Xamarin.Forms.Dependency(typeof(RecordAndInterperateSpeech))]
 namespace SpeechToText.iOS.Injection
@@ -30,9 +31,10 @@ namespace SpeechToText.iOS.Injection
         {
             AudioEngine.Stop();
             LiveSpeechRequest.EndAudio();
+            LiveSpeechRequest?.EndAudio();
         }
 
-        public string TranslateSpeachToText()
+        public void TranslateSpeachToText(FoodListFromSpeachViewModel model)
         {
             // Setup audio session
             var node = AudioEngine.InputNode;
@@ -51,11 +53,10 @@ namespace SpeechToText.iOS.Injection
             if (error != null)
             {
                 // Handle error and return
-                return "Error";
+                model.FoodItemToAdd =  "Error";
             }
 
             // Start recognition
-            string returnString = "";
             RecognitionTask = SpeechRecognizer.GetRecognitionTask(LiveSpeechRequest,
                 (SFSpeechRecognitionResult result, NSError err) =>
                 {
@@ -69,11 +70,10 @@ namespace SpeechToText.iOS.Injection
                     // Is this the final translation?
                     if (result.Final)
                     {
-                            returnString = result.BestTranscription.FormattedString;
+                            model.FoodItemToAdd = result.BestTranscription.FormattedString;
                     }
                 }
             });
-            return returnString;
         }
     }
 }

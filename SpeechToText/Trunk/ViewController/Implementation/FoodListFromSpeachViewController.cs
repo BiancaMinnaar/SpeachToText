@@ -16,7 +16,8 @@ namespace SpeechToText.Implementation.ViewController
     {
         IFoodListFromSpeachRepository<FoodListFromSpeachViewModel> _Repository;
         IFoodListFromSpeachService<FoodListFromSpeachViewModel> _Service;
- //#Bonsai Snippets - Declarations
+
+        //#Bonsai Snippets - Declarations
         public override void SetRepositories()
         {
             _Service = new FoodListFromSpeachService<FoodListFromSpeachViewModel>((U, C, A) => 
@@ -46,6 +47,11 @@ namespace SpeechToText.Implementation.ViewController
         internal void AddFood()
         {
             _Repository.AddFood(InputObject);
+        }
+
+        internal void SetAudioRecording()
+        {
+            _Repository.GetTextForRecording(InputObject);
         }
 
         //#Bonsai Snippets - Methods

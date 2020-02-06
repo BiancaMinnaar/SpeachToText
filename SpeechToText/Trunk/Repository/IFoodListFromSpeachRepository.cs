@@ -7,6 +7,7 @@ namespace SpeechToText.Interface.Repository
     public interface IFoodListFromSpeachRepository<T>
     {
         void AddFood(FoodListFromSpeachViewModel model);
+        void GetTextForRecording(FoodListFromSpeachViewModel model);
         //#Bonsai Snippets - MethodInterfaces
     }
 }

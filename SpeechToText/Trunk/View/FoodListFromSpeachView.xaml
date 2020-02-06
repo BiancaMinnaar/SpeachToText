@@ -20,6 +20,7 @@
         <control:FoodListControlView ViewModel="{Binding FoodList}" />
         <Entry Text="{Binding FoodItemToAdd}" />
         <Button Text="Add Food" Clicked="AddFood" />
+        <Button Text="Record" Clicked="RecordAudio" />
         <!--#Bonsai Snippets - Controls-->
     </StackLayout>
 </base:ProjectBaseContentPage>

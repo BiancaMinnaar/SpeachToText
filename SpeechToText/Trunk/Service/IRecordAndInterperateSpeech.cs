@@ -1,9 +1,11 @@
 ﻿using System;
+using SpeechToText.Trunk.ViewModel;
+
 namespace SpeechToText.Trunk.Service
 {
     public interface IRecordAndInterperateSpeech
     {
-        string TranslateSpeachToText();
+        void TranslateSpeachToText(FoodListFromSpeachViewModel model);
         void StopInterpreting();
         void CancelInterpretation();
     }
