@@ -19,6 +19,8 @@ namespace SpeechToText.Trunk.ViewModel.Control
             }
         }
 
+        
+
  //#Bonsai Snippets - Properties
     }
 }

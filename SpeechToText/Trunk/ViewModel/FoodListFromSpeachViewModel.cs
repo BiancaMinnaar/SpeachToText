@@ -29,6 +29,11 @@ namespace SpeechToText.Trunk.ViewModel
                 PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("FoodItemToAdd"));
             }
         }
+
+        public FoodListFromSpeachViewModel()
+        {
+            FoodList = new ObservableCollection<FoodViewModel>();
+        }
         //#Bonsai Snippets - Properties
     }
 }
