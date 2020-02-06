@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<base:ProjectBaseContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:base="clr-namespace:SpeechToText.Root.View"
+    xmlns:m="clr-namespace:SpeechToText.Trunk.ViewModel"
+    xmlns:p="clr-namespace:SpeechToText.Implementation.ViewController"
+    xmlns:b="clr-namespace:SpeechToText.Implementation.View"
+    Shell.NavBarIsVisible="True"
+    x:Class="SpeechToText.Implementation.View.SystemView" 
+    x:TypeArguments="p:SystemViewController, m:SystemViewModel">
+    <Grid Padding="0,0,0,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="4" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="40" />
+            <RowDefinition Height="4" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="4" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="4" />
+        </Grid.ColumnDefinitions>
+        <StackLayout Orientation="Vertical" Grid.Column="1" Grid.Row="1" >
+            
+        </StackLayout>
+    </Grid>
+</base:ProjectBaseContentPage>

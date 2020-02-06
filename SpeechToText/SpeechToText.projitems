@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{41be1560-071b-41d6-b812-0fc5db9df720}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>SpeechToText</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)App.xaml" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Trunk\View\AppShell.xaml">
+      <SubType>Designer</SubType>
+      <Generator>Generator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Trunk\View\SystemView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>Generator</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Root\CheckAndBalance.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Root\Constants.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\ViewModel\MasterModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\Repository\Implementation\MasterRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\Repository\IMasterRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Root\ProjectBaseContentPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Root\ProjectBaseContentScrollView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Root\ProjectBaseContentView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Root\ProjectBaseRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Root\ProjectBaseStackContentView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Root\ProjectBaseViewController.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Root\ProjectBaseViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Root\ByteArrayToImageSourceConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\View\AppShell.xaml.cs">
+      <DependentUpon>AppShell.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Root\ControlBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Root\BaseStorageRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Root\OfflineStorageRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Root\IOfflineStorageRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Root\ProjectBaseContentPopup.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\ViewController\ISystemViewController.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\ViewController\Implementation\SystemViewController.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\ViewModel\SystemViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\View\SystemView.xaml.cs">
+      <DependentUpon>SystemView.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Root\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Trunk\Repository\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Trunk\Repository\Implementation\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Trunk\Service\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Trunk\Service\Implementation\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Trunk\Service\ReturnModel\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Trunk\View\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Trunk\ViewController\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Trunk\ViewController\Implementation\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Trunk\ViewModel\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Trunk\View\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Trunk\View\Control\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Trunk\ViewModel\Control\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Trunk\View\Popup\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Trunk\ViewModel\Popup\" />
+  </ItemGroup>
+</Project>

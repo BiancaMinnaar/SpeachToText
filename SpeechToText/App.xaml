@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Application 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="SpeechToText.App">
+    <Application.Resources>
+        <!-- Application resource dictionary -->
+        <ResourceDictionary>
+            <!--Converters-->
+           
+            <!--Colors-->
+            <Color x:Key="primaryBlue">#00acfc</Color>
+            <Color x:Key="lightBlue">#69deff</Color>
+            <Color x:Key="darkBlue">#007dc9</Color>
+            <Color x:Key="textWhite">#ffffff</Color>
+            <Color x:Key="textBlack">#000000</Color>
+            <Color x:Key="textGray">Gray</Color>
+
+             <!--Controls-->
+            <Style x:Key="BaseButton" TargetType="Button">
+                <Setter Property="FontFamily" Value="Arial" />
+                <Setter Property="FontSize" Value="14" />
+                <Setter Property="CornerRadius" Value="8" />                
+            </Style>
+
+            <Style x:Key="BaseLabel" TargetType="Label">
+                <Setter Property="FontFamily" Value="Arial" />
+                <Setter Property="FontSize" Value="14" />
+            </Style>
+
+            <Style x:Key="BaseTextInput" TargetType="Entry">
+                <Setter Property="FontFamily" Value="Arial" />
+                <Setter Property="FontSize" Value="14" />
+                <Setter Property="TextColor" Value="{StaticResource S4TBlue}" />
+                <Setter Property="BackgroundColor" Value="{StaticResource lightGray}" />
+            </Style>
+            <!--/Controls-->
+            
+            <!--Buttons-->
+            <Style x:Key="ClearButton" TargetType="Button" BasedOn="{StaticResource BaseButton}">
+                <Setter Property="BackgroundColor" Value="{StaticResource lightGray}" />
+                <Setter Property="TextColor" Value="{StaticResource textWhite}" />
+                <Setter Property="Padding" Value="4" />
+            </Style>
+
+            <!--Labels-->
+            <!--Bold Label-->
+            <Style x:Key="boldLabel" TargetType="Label" BasedOn="{StaticResource BaseLabel}">
+                <Setter Property="FontAttributes" Value="Bold" />
+            </Style>
+            
+            <!--Centered Label-->
+            <Style x:Key="centerLabel" TargetType="Label" BasedOn="{StaticResource BaseLabel}">
+                <Setter Property="HorizontalTextAlignment" Value="Center" />
+            </Style>
+            
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
