@@ -73,6 +73,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Trunk\Repository\Implementation\FoodListFromSpeachRepository.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Trunk\Service\IFoodListFromSpeachService.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Trunk\Service\Implementation\FoodListFromSpeachService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Trunk\Service\IRecordAndInterperateSpeech.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Root\" />

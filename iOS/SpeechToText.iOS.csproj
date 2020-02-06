@@ -117,6 +117,7 @@
     <Compile Include="AppDelegate.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="Injection\RestServiceIOS.cs" />
+    <Compile Include="Injection\RecordAndInterperateSpeech.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Entitlements.plist" />
