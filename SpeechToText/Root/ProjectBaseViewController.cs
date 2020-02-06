@@ -20,10 +20,10 @@ namespace SpeechToText.Root.ViewController
         public bool HasSpecificResponse { get; set; }
 
         protected ProjectBaseViewController()
-            :base(new RestService(DependencyService.Get<INetworkInteraction>()), 
-            "Please email me at bminnaar@gmail for licencing or use previous versions.", 
-            ""
-            ,"")
+            :base(new RestService(DependencyService.Get<INetworkInteraction>()),
+            "587682495", 
+            "SpeechToText"
+            , "NYDAlySr6I/J7mdCynRR6l26eFrMi4S2zg8oZYj+3PUYQVp09WmMzeBsgW61V4bM")
         {
             _MasterRepo = MasterRepository.MasterRepo;
 
