@@ -8,6 +8,7 @@ using SpeechToText.Implementation.Service;
 using SpeechToText.Interface.Repository;
 using SpeechToText.Interface.Service;
 using Speech;
+using Xamarin.Essentials;
 //#Bonsai Snippets - Usings
 
 namespace SpeechToText.Implementation.ViewController
@@ -42,6 +43,14 @@ namespace SpeechToText.Implementation.ViewController
                     break;
                 }
             });
+        }
+
+        public Func<Task> EngageVoice()
+        {
+            return async () =>
+            {
+                await TextToSpeech.SpeakAsync("Please say Apple into the microphone while holding record.");
+            };
         }
 
         internal void AddFood()

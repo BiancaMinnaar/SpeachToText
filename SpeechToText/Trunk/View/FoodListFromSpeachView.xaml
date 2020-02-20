@@ -21,6 +21,7 @@
         <Entry Text="{Binding FoodItemToAdd}" />
         <Button Text="Add Food" Clicked="AddFood" />
         <Button Text="Record" Clicked="RecordAudio" />
+        <Button Text="Tell Me" Clicked="Speak" />
         <!--#Bonsai Snippets - Controls-->
     </StackLayout>
 </base:ProjectBaseContentPage>
