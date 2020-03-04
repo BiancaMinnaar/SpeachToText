@@ -18,8 +18,6 @@
     <StackLayout Orientation="Vertical">
         <StackLayout HeightRequest="30" />
         <control:FoodListControlView ViewModel="{Binding FoodList}" />
-        <Entry Text="Binding FoodItemToAdd}" />
-        <Button Text="Add Food" Clicked="AddFood" />
         <!--#Bonsai Snippets - Controls-->
     </StackLayout>
 </base:ProjectBaseContentPage>
